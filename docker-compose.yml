@@ -1,0 +1,14 @@
+services:
+  freezed:
+    build: .
+    container_name: freezed
+    ports:
+      - "8080:8080"
+    volumes:
+      # Mount the project so edits on the host are picked up on rebuild.
+      - ./:/app
+      # Keep vendor/ inside the container for speed and OS isolation.
+      - freezed_vendor:/app/vendor
+
+volumes:
+  freezed_vendor:

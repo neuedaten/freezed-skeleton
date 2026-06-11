@@ -1,0 +1,20 @@
+{
+  "name": "neuedaten/freezed-skeleton",
+  "type": "project",
+  "description": "Starter skeleton for Freezed — a static site generator powered by TYPO3 Fluid.",
+  "homepage": "https://github.com/neuedaten/freezed-skeleton",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "beta",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=8.1",
+    "neuedaten/freezed": "^0.1.0-beta"
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "@php vendor/bin/freezed install"
+    ],
+    "build": "@php vendor/bin/freezed build",
+    "install-site": "@php vendor/bin/freezed install"
+  }
+}
