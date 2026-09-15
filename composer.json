@@ -8,7 +8,7 @@
   "prefer-stable": true,
   "require": {
     "php": "^8.2",
-    "neuedaten/freezed": "^0.8.0-beta"
+    "neuedaten/freezed": "^0.9.0-beta"
   },
   "scripts": {
     "post-create-project-cmd": [
